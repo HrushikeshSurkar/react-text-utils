@@ -1,0 +1,77 @@
+:root {
+  /* Color variables */
+  --primary-color: #00796b; /* Teal */
+  --secondary-color: #80deea; /* Light teal */
+  --background-color: #f9f9f9; /* Light background */
+  --text-color: #000; /* Darker text for better readability */
+  --footer-background-color: #f1f1f1;
+  --footer-text-color: #555;
+
+  /* Typography */
+  --font-family: "Roboto", sans-serif;
+  --heading-font-size: 2rem;
+  --text-font-size: 1rem;
+
+  /* Spacing */
+  --default-padding: 20px;
+  --default-margin: 10px;
+  --container-max-width: 1200px;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* About section styling */
+.container {
+  max-width: var(--container-max-width);
+  margin: var(--default-margin) auto;
+  padding: var(--default-padding);
+}
+
+/* Accordion styles */
+.accordion-item {
+  margin-bottom: var(--default-margin);
+  border: 1px solid #ccc; /* Light border for better visibility */
+  border-radius: 5px;
+  background-color: #fff; /* Background color for each accordion item */
+}
+
+.accordion-header {
+  background-color: var(--secondary-color);
+}
+
+.accordion-button {
+  color: var(--text-color);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.accordion-button:hover {
+  background-color: var(--primary-color); /* Highlight on hover */
+  color: white; /* Change text color on hover */
+}
+
+/* Active accordion item */
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: white; /* Change text color when expanded */
+}
+
+/* Accordion body styles */
+.accordion-body {
+  padding: var(--default-padding);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

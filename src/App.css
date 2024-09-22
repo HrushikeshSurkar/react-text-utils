@@ -1,0 +1,36 @@
+:root {
+  /* Color variables */
+  --primary-color: #00796b; /* Teal */
+  --secondary-color: #80deea; /* Light teal */
+  --background-color: #f9f9f9; /* Light background */
+  --text-color: #fff; /* Text color */
+
+  --footer-background-color: #f1f1f1;
+  --footer-text-color: #555;
+
+  /* Typography */
+  --font-family: "Roboto", sans-serif;
+  --heading-font-size: 2rem;
+  --text-font-size: 1rem;
+
+  /* Spacing */
+  --default-padding: 20px;
+  --default-margin: 10px;
+  --container-max-width: 1200px;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,59 @@
+/* Navbar Styles */
+.navbar-custom {
+  background-color: var(
+    --primary-color
+  ); /* Primary color for navbar background */
+  color: var(--text-color); /* Text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--text-color); /* Text color for brand */
+  font-weight: bold; /* Make brand text bold */
+}
+
+.navbar-brand:active {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  color: var(--text-color); /* Text color for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--secondary-color); /* Secondary color for hover effect */
+}
+
+.navbar-custom .navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: var(--text-color); /* Icon color for the toggle button */
+}
+
+/* Active link styles */
+.navbar-custom .nav-link.active {
+  font-weight: bold; /* Bold text for active link */
+  border-bottom: 2px solid var(--secondary-color); /* Underline for active link */
+}
+
+/* Button styles */
+.btn-outline-success {
+  color: var(--text-color); /* Text color for the button */
+  border-color: var(--secondary-color); /* Button border color */
+}
+
+.btn-outline-success:hover {
+  background-color: var(--secondary-color); /* Hover background color */
+  color: var(--text-color); /* Hover text color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-custom .nav-link {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+}

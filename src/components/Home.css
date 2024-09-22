@@ -1,0 +1,87 @@
+/* Home.css */
+.home-container {
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    #e0f7fa,
+    #80deea
+  ); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  margin-top: 10px;
+  height: 85vh; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center;
+  color: #333;
+  font-family: "Roboto", sans-serif; /* Modern font */
+  overflow: hidden;
+}
+
+h1 {
+  color: #00796b; /* Dark teal for heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+  font-size: 3rem; /* Larger heading */
+  letter-spacing: 1.5px; /* Space between letters */
+  text-transform: uppercase; /* Uppercase text for style */
+  animation: fadeInDown 1s ease-in-out; /* Animation for heading */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 30px; /* Space below paragraph */
+  width: 60%; /* Limit paragraph width */
+  color: #555; /* Softer color for body text */
+}
+
+.home-paragraph-long {
+  width: 60%;
+  color: #444; /* More visible color for paragraph */
+  text-align: justify; /* Justify text to fill the space */
+  animation: fadeIn 1.5s ease-in-out; /* Animation for paragraph */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Starting position above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ending at normal position */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Adjust heading for smaller screens */
+  }
+  p {
+    font-size: 1rem; /* Smaller paragraph text */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+}
